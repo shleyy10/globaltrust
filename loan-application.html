@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Trust Bank - Loan Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="loan.css">
+</head>
+<body>
+
+    <header>
+        <h2>Global Trust Bank</h2>
+    </header>
+
+    <div class="loan-container">
+        <h2>Apply for a Loan</h2>
+        <p>Fill in the details below to apply for a loan.</p>
+
+        <form id="loanForm">
+            <label for="loanType">Select Loan Type</label>
+            <select id="loanType">
+                <option value="personal">Personal Loan</option>
+                <option value="business">Business Loan</option>
+                <option value="mortgage">Mortgage Loan</option>
+                <option value="auto">Auto Loan</option>
+            </select>
+
+            <label for="loanAmount">Loan Amount ($)</label>
+            <input type="number" id="loanAmount" placeholder="Enter amount" required>
+
+            <label for="loanDuration">Loan Duration (Months)</label>
+            <input type="number" id="loanDuration" placeholder="Enter duration" required>
+
+            <label for="monthlyIncome">Monthly Income ($)</label>
+            <input type="number" id="monthlyIncome" placeholder="Enter your income" required>
+
+            <button type="submit">Apply Now</button>
+        </form>
+
+        <div id="loanMessage"></div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>© 2025 Global Trust Bank. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Help Center</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="loan.js"></script>
+</body>
+</html>

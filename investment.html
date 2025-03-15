@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Trust Bank - Investments</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="investment.css">
+</head>
+<body>
+
+    <header>
+        <h2>Global Trust Bank</h2>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <nav>
+        <ul id="nav-links">
+            <li><a href="dashboard.html">🏠 Dashboard</a></li>
+            <li><a href="bills.html">💰 Bill Payments</a></li>
+            <li><a href="transfer.html">🔁 Transfers</a></li>
+            <li><a href="credit-card.html">💳 Credit Cards</a></li>
+            <li><a href="investment.html" class="active">📈 Investments</a></li>
+            <li><a href="settings.html">⚙️ Settings</a></li>
+        </ul>
+    </nav>
+
+    <div class="investment-container">
+        <h2>Your Investments</h2>
+
+        <div class="investment-box">
+            <div class="investment">
+                <h3>📊 Stock Market</h3>
+                <p>Balance: $12,500.00</p>
+                <p class="return">Returns: +8.5%</p>
+                <button>View Details</button>
+            </div>
+
+            <div class="investment">
+                <h3>🏡 Real Estate</h3>
+                <p>Balance: $50,000.00</p>
+                <p class="return">Returns: +12.3%</p>
+                <button>View Details</button>
+            </div>
+
+            <div class="investment">
+                <h3>💰 Fixed Deposits</h3>
+                <p>Balance: $20,000.00</p>
+                <p class="return">Returns: +5.2%</p>
+                <button>View Details</button>
+            </div>
+        </div>
+
+        <button class="invest-now">Invest in New Plan</button>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>© 2025 Global Trust Bank. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Help Center</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

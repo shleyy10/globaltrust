@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Trust Bank - Transfer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="transfer.css">
+</head>
+<body>
+
+    <header>
+        <h2>Global Trust Bank</h2>
+    </header>
+
+    <div class="transfer-container">
+        <h2>Transfer Funds</h2>
+        <p>Securely send money to any bank account.</p>
+
+        <form id="transferForm">
+            <label for="recipient">Recipient Account Number</label>
+            <input type="text" id="recipient" required>
+
+            <label for="recipient-name">Recipient Name</label>
+            <input type="text" id="recipient-name" required readonly>
+
+            <label for="amount">Amount ($)</label>
+            <input type="number" id="amount" required>
+
+            <label for="message">Transfer Purpose (Optional)</label>
+            <input type="text" id="message">
+
+            <button type="submit">Proceed to Transfer</button>
+        </form>
+
+        <div id="summary" class="hidden">
+            <h3>Transaction Summary</h3>
+            <p><strong>Recipient:</strong> <span id="summary-recipient"></span></p>
+            <p><strong>Amount:</strong> $<span id="summary-amount"></span></p>
+            <p><strong>Message:</strong> <span id="summary-message"></span></p>
+            <button id="confirmTransfer">Confirm & Send</button>
+        </div>
+
+        <div id="otp-section" class="hidden">
+            <h3>Security Verification</h3>
+            <p>Enter the OTP sent to your registered phone number.</p>
+            <input type="text" id="otp-code" required>
+            <button id="verifyOtp">Verify & Complete</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>© 2025 Global Trust Bank. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Help Center</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="transfer.js"></script>
+</body>
+</html>

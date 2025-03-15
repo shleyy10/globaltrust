@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Trust Bank - Help Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="help-center.css">
+</head>
+<body>
+
+    <header>
+        <h2>Global Trust Bank</h2>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <nav>
+        <ul id="nav-links">
+            <li><a href="dashboard.html">🏠 Dashboard</a></li>
+            <li><a href="bills.html">💰 Bill Payments</a></li>
+            <li><a href="transfer.html">🔁 Transfers</a></li>
+            <li><a href="credit-card.html">💳 Credit Cards</a></li>
+            <li><a href="investment.html">📈 Investments</a></li>
+            <li><a href="settings.html">⚙️ Settings</a></li>
+            <li><a href="help-center.html" class="active">❓ Help Center</a></li>
+        </ul>
+    </nav>
+
+    <div class="help-container">
+        <h2>Help Center</h2>
+
+        <!-- FAQ Section -->
+        <div class="faq">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-item">
+                <p class="question">🔹 How do I reset my password?</p>
+                <p class="answer">Go to Settings > Change Password and follow the instructions.</p>
+            </div>
+            <div class="faq-item">
+                <p class="question">🔹 How can I contact customer support?</p>
+                <p class="answer">You can email us at <a href="mailto:support@globaltrustbank.com">support@globaltrustbank.com</a> or call +1-800-123-4567.</p>
+            </div>
+            <div class="faq-item">
+                <p class="question">🔹 Is my account secure?</p>
+                <p class="answer">Yes, we use advanced encryption and 2FA to protect your account.</p>
+            </div>
+        </div>
+
+        <!-- Contact Support -->
+        <div class="contact-support">
+            <h3>Contact Support</h3>
+            <p>Need more help? Reach out to our support team.</p>
+            <button onclick="alert('Connecting to support...')">Live Chat</button>
+            <p>Email: <a href="mailto:support@globaltrustbank.com">support@globaltrustbank.com</a></p>
+            <p>Phone: +1-800-123-4567</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>© 2025 Global Trust Bank. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Help Center</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

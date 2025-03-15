@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Trust Bank - Bill Payment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bill-payment.css">
+</head>
+<body>
+
+    <header>
+        <h2>Global Trust Bank</h2>
+    </header>
+
+    <div class="bill-container">
+        <h2>Pay Your Bills</h2>
+        <p>Securely pay your utility, internet, and other bills.</p>
+
+        <form id="billForm">
+            <label for="bill-type">Select Bill Type</label>
+            <select id="bill-type" required>
+                <option value="">-- Select Bill --</option>
+                <option value="electricity">Electricity</option>
+                <option value="internet">Internet & Cable</option>
+                <option value="water">Water Bill</option>
+                <option value="phone">Mobile Recharge</option>
+                <option value="insurance">Insurance</option>
+            </select>
+
+            <label for="account-number">Billing Account Number</label>
+            <input type="text" id="account-number" required>
+
+            <label for="amount">Amount ($)</label>
+            <input type="number" id="amount" required>
+
+            <button type="submit">Proceed to Pay</button>
+        </form>
+
+        <div id="bill-summary" class="hidden">
+            <h3>Payment Summary</h3>
+            <p><strong>Bill Type:</strong> <span id="summary-bill"></span></p>
+            <p><strong>Account:</strong> <span id="summary-account"></span></p>
+            <p><strong>Amount:</strong> $<span id="summary-amount"></span></p>
+            <button id="confirmPayment">Confirm & Pay</button>
+        </div>
+
+        <div id="otp-section" class="hidden">
+            <h3>Security Verification</h3>
+            <p>Enter the OTP sent to your registered phone number.</p>
+            <input type="text" id="otp-code" required>
+            <button id="verifyOtp">Verify & Complete</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>© 2025 Global Trust Bank. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Help Center</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="bills.js"></script>
+</body>
+</html>

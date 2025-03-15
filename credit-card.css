@@ -1,0 +1,115 @@
+/* Credit Card Container */
+.credit-card-container {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 80px auto;
+}
+
+.credit-card-container h2 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Credit Card Display */
+.card-info {
+    background: linear-gradient(to right, #0077b6, #00a8e8);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.card-number {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-holder, .card-expiry, .card-balance {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Transactions Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #f5f5f5;
+    font-weight: bold;
+}
+
+button {
+    background: #0077b6;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #005f91;
+}
+
+#cardMessage {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background: #f5f5f5;
+    color: gray;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

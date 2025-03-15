@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Trust Bank - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <header>
+        <h2>Global Trust Bank</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">🏠 Dashboard</a></li>
+            <li><a href="bills.html">💰 Bill Payments</a></li>
+            <li><a href="transfer.html">🔁 Transfers</a></li>
+            <li><a href="credit-card.html">💳 Credit Cards</a></li>
+            <li><a href="investment.html">📈 Investments</a></li>
+            <li><a href="settings.html">⚙️ Settings</a></li>
+        </ul>
+    </nav>
+
+    <div class="dashboard-container">
+        <!-- Account Balance -->
+        <div class="balance-box">
+            <h2>Account Balance:</h2>
+            <p class="balance">$7,465,364.00</p>
+        </div>
+
+        <!-- Recent Transactions -->
+        <div class="transactions">
+            <h3>Recent Transactions</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2025-03-10</td>
+                        <td>Online Purchase - Amazon</td>
+                        <td class="debit">- $150.00</td>
+                        <td class="status completed">Completed</td>
+                    </tr>
+                    <tr>
+                        <td>2025-03-09</td>
+                        <td>Salary Deposit</td>
+                        <td class="credit">+ $5,000.00</td>
+                        <td class="status completed">Completed</td>
+                    </tr>
+                    <tr>
+                        <td>2025-03-08</td>
+                        <td>Electricity Bill Payment</td>
+                        <td class="debit">- $75.50</td>
+                        <td class="status completed">Completed</td>
+                    </tr>
+                    <tr>
+                        <td>2025-03-07</td>
+                        <td>ATM Withdrawal</td>
+                        <td class="debit">- $500.00</td>
+                        <td class="status completed">Completed</td>
+                    </tr>
+                    <tr>
+                        <td>2025-03-06</td>
+                        <td>Netflix Subscription</td>
+                        <td class="debit">- $15.99</td>
+                        <td class="status completed">Completed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>© 2025 Global Trust Bank. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Help Center</a></li>
+            </ul>
+        </div>
+    </footer>    
+</body>
+</html>

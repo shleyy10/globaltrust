@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Trust Bank - Account Settings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="account-setting.css">
+</head>
+<body>
+
+    <header>
+        <div>
+        <h2>Global Trust Bank</h2>
+    </div>
+    <!-- Navigation Menu -->
+<nav>
+    <ul>
+        <li><a href="dashboard.html">🏠 Dashboard</a></li>
+        <li><a href="bills.html">💰 Bill Payments</a></li>
+        <li><a href="transfer.html">🔁 Transfers</a></li>
+        <li><a href="credit-card.html">💳 Credit Cards</a></li>
+        <li><a href="investment.html">📈 Investments</a></li>
+        <li><a href="settings.html">⚙️ Settings</a></li>
+    </ul>
+</nav>
+
+    </header>
+    
+
+    <div class="settings-container">
+        <h2>Account Settings</h2>
+        <p>Update your account information</p>
+
+        <form id="settingsForm">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+            <label for="password">New Password</label>
+            <input type="password" id="password" placeholder="Enter new password">
+
+            <button type="submit">Save Changes</button>
+        </form>
+
+        <div id="settingsMessage"></div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>© 2025 Global Trust Bank. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Help Center</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="account-setting.js"></script>
+</body>
+</html>
